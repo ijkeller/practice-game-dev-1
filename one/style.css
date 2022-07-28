@@ -1,7 +1,7 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     /* box-sizing: border-box; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     --bg-color-1: hsl(0, 0%, 100%);
     --color-1: hsl(0, 0%, 0%);
     --bg-color-2: hsl(0, 0%, 50%);
@@ -9,7 +9,7 @@
     --bg-color-3: hsl(240, 100%, 25%);
     --color-3: hsl(240, 100%, 75%);
 }
-
+/* 
 html {
     display: grid;
     justify-content: center;
@@ -33,7 +33,18 @@ body {
     width: 1400px;
     height: 800px;
     position: relative;
+} */
+
+.canvas-container {
+    border: 5px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
 }
+
 
 canvas {
     width: inherit;
