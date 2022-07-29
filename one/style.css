@@ -1,44 +1,21 @@
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    /* box-sizing: border-box; */
-    border: 1px solid black;
-    --bg-color-1: hsl(0, 0%, 100%);
-    --color-1: hsl(0, 0%, 0%);
-    --bg-color-2: hsl(0, 0%, 50%);
-    --color-2: hsl(0, 0%, 0%);
-    --bg-color-3: hsl(240, 100%, 25%);
-    --color-3: hsl(240, 100%, 75%);
-}
-
-html {
-    display: grid;
-    justify-content: center;
-    width: 99.8vw;
-    height: 98vh;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    background-color: var(--bg-color-1);
-    color: var(--color-1);
-    width: inherit;
-    height: inherit;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-}
-
-.canvas-container {
-    width: 1400px;
-    height: 800px;
-    position: relative;
-}
 
 canvas {
-    width: inherit;
-    height: inherit;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+}
+
+.controls {
+    position: absolute;
+    z-index: 10;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.controls, select, option {
+    font-size: 25px;
 }
